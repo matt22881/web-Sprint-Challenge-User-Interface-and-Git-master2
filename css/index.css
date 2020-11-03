@@ -1,4 +1,6 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/**  Implementing CSS Reset  */
+
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,19 +14,19 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -47,13 +49,22 @@ table {
 	border-spacing: 0;
 }
 
+/**  Some General Styling  */
+
+
 * {
     box-sizing: border-box;
+    /* border:.25px dashed red; */
+
 }
 
+img {
+    width: 100%
+}
 html, body {
-    height: 100%;
+    /* height: 100%; */
     font-family: 'Roboto', sans-serif;
+    margin: 1%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -66,11 +77,34 @@ p {
     line-height: 1.4;
 }
 
+/**  Some Specific Styles Now  */
+/*   Top Section  */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+.jumbo {
+    width: 100%;
+    margin: 1% auto;
+}
 .container {
     width: 800px;
     margin: 0 auto;
 }
-
+.container-about{
+    width: 45%;
+}
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -78,39 +112,70 @@ p {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
-
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
 }
+
+/*  Middle Section  */
 
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
-
 .middle-content h2 {
     padding: 0 2%;
     margin-bottom: 0;
 }
-
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
+    /* background: black; */
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.b1{
+    background: teal;
+}
+.b2{
+    background: gold;
+}
+.b3{
+    background: cadetblue;
+}
+.b4{
+    background: coral;
+}
+.b5{
+    background: crimson;
+}
+.b6{
+    background: forestgreen;
+}
+.b7{
+    background: darkorchid;
+}
+.b8{
+    background: hotpink;
+}
+.b9{
+    background: indigo;
+}
+.b10{
+    background: dodgerblue;
+}
+
+/*  Bottom Section  */
 
 .bottom-content {
     display: flex;
@@ -125,6 +190,9 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+
+/*  Footer  */
+
 
 footer {
     width: 100%;
@@ -143,4 +211,38 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+
+/**  About Page Styles  */
+
+.about-row {
+    display: flex;
+    width: 100%;
+}
+.bottom-border{
+    border-bottom: 1px dotted black;
+}
+.container-about{
+    width: 46%;
+    margin: 3%;
+}
+.container-about img{
+    width: 100%;
+}
+h3{
+    margin: 2% 0;
+}
+.button{
+    width: 30%;
+    display: block;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 2rem;
+    text-align: center;
+    padding: .5rem 0 0;
+    margin:1.5rem 0;
+}
+.afterword {
+    margin: 5% 0;
 }

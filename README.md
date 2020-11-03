@@ -33,15 +33,15 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
-
+try to use the elements that have the most meaningful, contextual, relevance not just fill ithe page full of divs and call it good
 2. Name two big differences between ```display: block;``` and ```display: inline;```.
-
+display blok takes up it's whole line but can recieve a width...inl;ine-block doesn't take up it's whiole row and an item can sith adjacent to  it...it's alco unable to take a with property and takes up as much room as it needs
 3. What are the 4 areas of the box model?
-
+content, padding, border, and margin in that order from inside out
 4. While using flexbox, what axis does the following property work on: ```align-items: center```?
-
+the cross axis, counter to the main,...normally the vertical y axis, but if flex direction is row it's the x or horizontal axis
 5. Explain why git is valuable to a team of developers.
-
+it allows to recover from a mishap, with old code readily accessable to compare against...also allows for multiple people to work on different aspects of the same project without interfereing one with another
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
 ## Project Set Up
@@ -52,13 +52,13 @@ You are expected to be able to answer all these questions. Your responses contri
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push -u origin `<firstName-lastName>`.
- 
+
 Follow these steps for completing your project.
 
 - [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
 - [ ] Add your Team Lead as a reviewer on the pull-request
 - [ ] Your Team Lead will count the project as complete by merging the branch back into master.
- 
+
 
 
 ## Minimum Viable Product
@@ -96,12 +96,12 @@ You will also notice there are 10 boxes on the home page that need background co
 
 In your solution, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
-Note: Please make sure you are using flexbox to layout your website. Floats, inline-block, tables, etc, should not be used for layout. 
+Note: Please make sure you are using flexbox to layout your website. Floats, inline-block, tables, etc, should not be used for layout.
 
 ## Stretch Problems
 
 After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on the following optional goals:
 
-* [ ] refactor your HTML, make sure it's indented properly, clean, readable, you have written appropriate comments where necessary and that all attributes (required and encouraged) are filled out correctly.  
+* [ ] refactor your HTML, make sure it's indented properly, clean, readable, you have written appropriate comments where necessary and that all attributes (required and encouraged) are filled out correctly.
 * [ ] Ensure your CSS is organized and readable, you've seperated your code by section and that you are using descriptive class names and adding classes in your HTML where styles repeat rather than rewrting the same styles over again
-* [ ] Use a flex item property of your choice when laying out a section of your website, ensure you can explain how and why you've used this property 
+* [ ] Use a flex item property of your choice when laying out a section of your website, ensure you can explain how and why you've used this property
